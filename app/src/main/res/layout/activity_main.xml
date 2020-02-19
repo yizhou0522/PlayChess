@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <FrameLayout
+        android:id="@+id/utility_fragment_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/colorTransAccent"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eu.jrie.playChess.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:contentDescription="@string/app_name"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/chess_logo"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+
+        android:textColor="@color/colorBlackPlayer"
+        android:text="@string/app_name"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/start_game_button"
+            style="@style/mainButtonStyle"
+            android:layout_width="194dp"
+            android:text="@string/game_start_button" />
+
+    <Button
+        style="@style/mainButtonStyle"
+        android:id="@+id/settings_button"
+        android:text="@string/settings_button"/>
+
+    <Button
+        style="@style/mainButtonStyle"
+        android:id="@+id/about_button"
+        android:text="@string/about_button"/>
+
+</LinearLayout>
+
+</RelativeLayout>

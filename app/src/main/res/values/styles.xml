@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+
+        <item name="android:windowBackground">@drawable/background</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryGold</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="mainButtonStyle" parent="AppTheme">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+
+        <item name="android:background">@drawable/main_button</item>
+
+        <item name="android:textColor">@color/colorBlackPlayer</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="promotionButtonStyle" parent="AppTheme">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+
+        <item name="android:background">@null</item>
+        
+    </style>
+
+    <style name="utilityFragmentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+
+        <item name="android:background">@drawable/utility_background</item>
+
+    </style>
+
+    <style name="utilityHeader">
+        <item name="android:tag">utility_header</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorBlackPlayer</item>
+
+    </style>
+
+    <style name="utilityCloseButton">
+        <item name="android:tag">close_button</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+
+        <item name="android:background">@null</item>
+
+        <item name="android:text">@string/utility_close</item>
+    </style>
+
+    <style name="preferencesStyle" parent="AppTheme">
+        <item name="android:colorAccent">@color/colorPrimaryGold</item>
+    </style>
+
+    <style name="gameMenuButtonStyle" parent="mainButtonStyle">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="seekBarStyle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+
+        <item name="android:textColor">@color/colorBlackPlayer</item>
+
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="timePreviewTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimaryGold</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="eu.jrie.playChess.GameActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <FrameLayout
+        android:id="@+id/game_fragment_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/board_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clipChildren="false">
+
+        <FrameLayout
+            android:id="@+id/black_pad_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="180">
+            <fragment
+                android:name="eu.jrie.playChess.PlayerPadFragment"
+                android:id="@+id/black_pad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <eu.jrie.playChess.Views.Board
+            android:id="@+id/board_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+
+            tools:layout_width="100dp"
+            tools:layout_height="100dp"/>
+
+        <fragment
+            android:name="eu.jrie.playChess.PlayerPadFragment"
+            android:id="@+id/white_pad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <eu.jrie.playChess.Views.BoardGrid
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/game_menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+
+        android:background="@null"
+
+        android:elevation="0dp"
+        android:text="@string/game_menu_button"
+        android:textSize="14sp"
+        android:textColor="@color/colorAccent"/>
+
+
+</RelativeLayout>

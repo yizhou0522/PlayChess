@@ -1,0 +1,79 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">趣味下棋</string>
+
+    <!--pieces-->
+    <string name="bishop">主教</string>
+    <string name="knight">骑士</string>
+    <string name="rook">城堡</string>
+    <string name="queen">王后</string>
+
+    <!--main activity-->
+    <string name="game_start_button">开始游戏</string>
+    <string name="settings_button">设置</string>
+    <string name="about_button">关于</string>
+
+    <!--settings-->
+    <string name="settings_header">设置</string>
+    <string name="preference_display_title">选择模式</string>
+    <string name="preference_display_summary">选择经典或现代模式</string>
+    <string name="preference_display_dialog">选择模式</string>
+    <string name="preference_timer_group">计算器</string>
+    <string name="preference_timer_title">时间记录</string>
+    <string name="preference_vibrations_title">震动</string>
+    <string name="preference_time_begin">开始时间</string>
+    <string name="preference_time_added">每一步所需时间</string>
+
+    <string name="utility_close">返回主菜单</string>
+
+    <!--about-->
+    <string name="about_header">关于</string>
+    <string name="about_app">这个app完全免费，如果喜欢，请在应用商店上给与好评，谢谢！</string>
+    <string name="about_icons_begin"></string>
+    <string name="about_FlatIcon"></string>
+    <string name="about_icons_and"></string>
+    <string name="about_FreePik"></string>
+    <string name="about_flaticon_link">\u0020网页 https://github.com/yizhou0522</string>
+
+    <!--game activity-->
+    <string name="game_menu_button">菜单</string>
+
+    <string name="promotion_description">请选择黑方或者白方</string>
+
+    <string name="leave_game_header">你确定要退出游戏吗？</string>
+    <string name="leave_game_confirm">确定</string>
+    <string name="leave_game_decline">再看看</string>
+
+    <!--end of the game fragment-->
+    <string name="white_won">白方获胜!</string>
+    <string name="black_won">黑方获胜!</string>
+    <string name="draw">双方平局!</string>
+
+    <string name="end_game_menu_button">返回菜单</string>
+    <string name="end_game_play_again_button">再玩一次</string>
+    <string name="end_ame_show_board_button">展示棋盘</string>
+    <string name="end_game_share_board_button">分享棋盘</string>
+
+    <!--game menu-->
+    <string name="game_menu_end_button">游戏结束</string>
+    <string name="game_menu_continue_button">继续游戏</string>
+
+    <!--check-->
+    <string name="toast_check">将军！</string>
+
+    <!--draw-->
+    <string name="draw_toast_text">你的对手向你提出和局</string>
+
+    <!--surrender fragment-->
+    <string name="surrender_confirm_button">投降</string>
+    <string name="surrender_decline_button" tools:ignore="ButtonCase">取消</string>
+
+    <!--set time fragment-->
+    <string name="timer_set_up_header">设置计时器</string>
+    <string name="timer_beginning_text">游戏开始时间</string>
+    <string name="timer_add_text">每一步所需时间</string>
+    <string name="confirm_time_button">开始计时</string>
+
+    <!--board sharing-->
+    <string name="toast_board_sharing">图片已保存至相册</string>
+    <string name="toast_board_sharing_failed">保存失败，再试一次</string>
+</resources>

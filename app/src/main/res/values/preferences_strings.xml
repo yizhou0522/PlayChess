@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="display_key">选择模式</string>
+    <string name="default_display_mode">经典</string>
+    <string name="classic_mode">经典</string>
+    <string-array name="display_modes_strings">
+        <item>经典</item>
+        <item>现代</item>
+    </string-array>
+
+    <string name="timer_on_key">显示计时器</string>
+
+    <string name="vibrations_on_key">震动</string>
+</resources>

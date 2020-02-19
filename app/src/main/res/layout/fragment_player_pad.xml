@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/player_pad_fragment_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlackPlayer"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+
+        android:background="@drawable/player_pad_background">
+
+            <eu.jrie.playChess.Views.CapturedPad
+                android:id="@+id/capture_pad"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/player_pad_draw_button"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+
+                    android:background="@drawable/draw_icon" />
+
+                <Button
+                    android:id="@+id/player_pad_surrender_button"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+
+                    android:background="@drawable/surrender_icon" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/player_pad_timer_view"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="7dp"
+
+        tools:text="04:27"
+        android:textColor="@color/colorPrimaryGold"
+        android:gravity="center"/>
+</RelativeLayout>

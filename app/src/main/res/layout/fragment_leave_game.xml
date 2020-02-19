@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorTransAccent"
+    tools:context="eu.jrie.playChess.PromotionFragment">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/ingame_fragment_background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="@string/leave_game_header" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                style="@style/gameMenuButtonStyle"
+                android:id="@+id/leave_game_confirm_button"
+                android:text="@string/leave_game_confirm" />
+
+            <Button
+                style="@style/gameMenuButtonStyle"
+                android:id="@+id/leave_game_decline_button"
+                android:text="@string/leave_game_decline" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

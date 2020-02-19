@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorTransAccent"
+    tools:context="eu.jrie.playChess.PromotionFragment">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/ingame_fragment_background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/promotion_description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                style="@style/promotionButtonStyle"
+                android:id="@+id/promotion_knight_button"
+                tools:text="@string/knight"
+                tools:background="@drawable/black_knight"/>
+
+            <Button
+                style="@style/promotionButtonStyle"
+                android:id="@+id/promotion_bishop_button"
+                tools:text="@string/bishop"
+                tools:background="@drawable/white_bishop"/>
+
+            <Button
+                style="@style/promotionButtonStyle"
+                android:id="@+id/promotion_rook_button"
+                tools:text="@string/rook" />
+
+            <Button
+                style="@style/promotionButtonStyle"
+                android:id="@+id/promotion_queen_button"
+                tools:text="@string/queen" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

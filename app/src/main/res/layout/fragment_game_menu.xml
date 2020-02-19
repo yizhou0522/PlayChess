@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorTransAccent"
+    tools:context="eu.jrie.playChess.PromotionFragment">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/ingame_fragment_background">
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:columnCount="2">
+            <Button
+                android:id="@+id/game_menu_end_button"
+                style="@style/gameMenuButtonStyle"
+
+                android:text="@string/game_menu_end_button"/>
+            <Button
+                android:id="@+id/game_share_button"
+                style="@style/gameMenuButtonStyle"
+
+                android:text="@string/end_game_share_board_button"/>
+        </GridLayout>
+        <Button
+            android:id="@+id/game_menu_continue_button"
+            style="@style/gameMenuButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:text="@string/game_menu_continue_button"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
